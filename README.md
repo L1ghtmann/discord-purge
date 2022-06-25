@@ -6,28 +6,25 @@ Remove all of your messages from a given Discord guild (server) or a DM (direct 
 
 ### npm
 
-    $ npm install
+	$ npm install
 
 ### yarn
 
-    $ yarn
+	$ yarn
 
 ## How to use:
 
-    $ node index.js
+	$ node index.js
 
 And follow the on-screen instructions.
 
-## How to get the token:
+## How to get the token (Firefox):
 
-1. Log into your Discord account in the browser. https://discordapp.com/login
+1. Log into your Discord account in the browser (https://discordapp.com/login).
 2. Open the developer tools (press: Ctrl + Shift + I [on PCs] or Command + Shift + I [on Macs]).
-3. Open the Application tab.
-4. Select Local Storage from the left sidebar.
-5. Click on an entry containing 'discordapp.com'.
-6. Find the row that contains 'token' in the table on the right side.
-7. Your token is the value (without the double quotes!) on the right side of the table.
+3. Open the Network tab.
+4. Filter for "/api" (may need to refresh the page for them to appear).
+5. Select the [200] status entry with "library" in its 'File'.
+6. Open the headers tab on the right-hand side.
+7. Your token is the value for the "Authorization" key under the 'Request Headers' heading.
 
-## Bugs
-
-https://github.com/Ominousness/discord-purge/issues
